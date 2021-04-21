@@ -1,6 +1,11 @@
 <html>
 <head>
 <title>Captcha Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,500' rel='stylesheet' type='text/css'>
+    <link href='custom.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div style="width:800px;margin:0px auto;">
@@ -10,28 +15,28 @@
 		<div class="container">
 			<div class="row">
 				<div class="container text-center" id="form-title" style="background-color:#FFC90E;">
-					<h5 style="font-weight:bold;">FORM UBAH / TAMBAH DATA</h5>
+					<h5 style="font-weight:bold;">UPDATE / ADD DATA FORM</h5>
 				</div>
 			</div>
 		</div>
 		<div class="container mt-1" style="background-color:#D2D2D2;border:3px solid #FFC90E;">
 		  <form name="data_asuransi" class="container-fluid no-padding" form>
 				<div class="form-group">
-			    <label for="namaLengkap" style="font-weight: bold;">Nama Lengkap</label>
+			    <label for="namaLengkap" style="font-weight: bold;">Full Name</label>
 			    <input type="text" class="form-control" id="namaLengkap" name="namaLengkap" required>
 			  </div>
 				<div class="form-group">
-			    <label for="nomorPolis" style="font-weight: bold;">Nomor Polis</label>
+			    <label for="nomorPolis" style="font-weight: bold;">Polis Number</label>
 			    <input type="number" class="form-control" id="nomorPolis" name="nomorPolis" required>
 			  </div>
 				<div class="form-group">
-			    <label for="nomorTelepon" style="font-weight: bold;">Nomor Telepon</label>
+			    <label for="nomorTelepon" style="font-weight: bold;">Phone Number</label>
 			    <input type="number" class="form-control" id="nomorTelepon" name="nomorTelepon" required>
 			  </div>
 				<div class="form-group">
-			    <label for="produkAsuransi" style="font-weight: bold;">Produk Asuransi</label>
+			    <label for="produkAsuransi" style="font-weight: bold;">Product</label>
 			    <select class="form-control" id="produkAsuransi" name="produkAsuransi">
-		    		<option value="">-- Produk Asuransi --</option>
+		    		<option value="">-- Product List --</option>
 		    		<option value="motoprox">Motoprox</option>
 		    		<option value="autocillinx">Autocillinx</option>
 		    		<option value="travellinx">Travellinx</option>
@@ -43,11 +48,11 @@
 			    </select>
 			  </div>
 				<div class="form-group">
-			    <label for="ubahTambah" style="font-weight: bold;">Data di Ubah / Tambah</label>
+			    <label for="ubahTambah" style="font-weight: bold;">Data Action</label>
 			    <select class="form-control" id="ubahTambah" name="ubahTambah">
-		    		<option value="">-- Pilih Status --</option>
-		    		<option value="perubahan">Perubahan</option>
-		    		<option value="penambahan">Penambahan</option>
+		    		<option value="">-- Choose Status --</option>
+		    		<option value="update">UPDATE</option>
+		    		<option value="add">ADD</option>
 			    </select>
 			  </div>
 			  <p id="captchaError"></p>
@@ -61,5 +66,12 @@
 		</div>
 	</div>
 </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="validator.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>
