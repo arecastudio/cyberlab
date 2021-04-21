@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Captcha Test</title>
+</head>
+<body>
+<div style="width:800px;margin:0px auto;">
+<h1 style="text-align: center;"><strong><span style="color:#FF0000;">Captcha Test</span></strong></h1>
+
+	<div class="container-fluid bg-white pt-2 pb-2">
+		<div class="container">
+			<div class="row">
+				<div class="container text-center" id="form-title" style="background-color:#FFC90E;">
+					<h5 style="font-weight:bold;">FORM UBAH / TAMBAH DATA</h5>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-1" style="background-color:#D2D2D2;border:3px solid #FFC90E;">
+		  <form name="data_asuransi" class="container-fluid no-padding" form>
+				<div class="form-group">
+			    <label for="namaLengkap" style="font-weight: bold;">Nama Lengkap</label>
+			    <input type="text" class="form-control" id="namaLengkap" name="namaLengkap" required>
+			  </div>
+				<div class="form-group">
+			    <label for="nomorPolis" style="font-weight: bold;">Nomor Polis</label>
+			    <input type="number" class="form-control" id="nomorPolis" name="nomorPolis" required>
+			  </div>
+				<div class="form-group">
+			    <label for="nomorTelepon" style="font-weight: bold;">Nomor Telepon</label>
+			    <input type="number" class="form-control" id="nomorTelepon" name="nomorTelepon" required>
+			  </div>
+				<div class="form-group">
+			    <label for="produkAsuransi" style="font-weight: bold;">Produk Asuransi</label>
+			    <select class="form-control" id="produkAsuransi" name="produkAsuransi">
+		    		<option value="">-- Produk Asuransi --</option>
+		    		<option value="motoprox">Motoprox</option>
+		    		<option value="autocillinx">Autocillinx</option>
+		    		<option value="travellinx">Travellinx</option>
+		    		<option value="others_dbdx">DBDX</option>
+		    		<option value="others_typusx">Typusx</option>
+		    		<option value="others_home_insurancex">Home Insurancex</option>
+		    		<option value="others_pax">PAX</option>
+		    		<option value="others">Others</option>
+			    </select>
+			  </div>
+				<div class="form-group">
+			    <label for="ubahTambah" style="font-weight: bold;">Data di Ubah / Tambah</label>
+			    <select class="form-control" id="ubahTambah" name="ubahTambah">
+		    		<option value="">-- Pilih Status --</option>
+		    		<option value="perubahan">Perubahan</option>
+		    		<option value="penambahan">Penambahan</option>
+			    </select>
+			  </div>
+			  <p id="captchaError"></p>
+			  <div class="form-group text-center">				
+			  <div class="g-recaptcha" data-sitekey="6LdB0vgZAAAAAMBOscqgmU5Vfa1vEySoRHuPhKVR" style="width:300px; margin:0 auto;"></div>
+			</div>
+				<div class="form-group text-center">					
+			    <button class="btn btn-submit" >Submit</button>
+			  </div>
+		  </form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
